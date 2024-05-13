@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Shrikhand", sans-serif;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+header img {
+  width: 60%;
+  padding: 10px;
+}
+header div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #EAEAEA;
+  text-align: center;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 0 0 2px 2px rgba(8, 0, 0, 0.2274509804);
+  font-weight: 500;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  gap: 30px;
+}
+main section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+main div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  text-align: center;
+}
+main button {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(360deg, #9356DC 21%, #FF79DA 100%);
+  padding: 18px 22px;
+  border: solid transparent 0px;
+  box-shadow: rgba(0, 0, 0, 0.21) 5px 5px 25px 5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+main button:hover {
+  background: linear-gradient(360deg, #9356DC 0%, #FF79DA 100%);
+  box-shadow: rgba(0, 0, 0, 0.65) 5px 5px 70px 5px;
+  transition-duration: 4s;
+}
+main p {
+  font-size: 18px;
+  font-weight: 100;
+}/*# sourceMappingURL=index.css.map */
