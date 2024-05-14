@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -21,58 +26,93 @@
         <img src="./assets/img/logo/ohmyfood.png" alt="logo" />
 
         <div class="localisation.nav">
-            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
             <p>Paris, Belleville</p>
         </div>
     </header>
     <main>
         <section class="Explorer">
-        <div class="sectionContainer">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <button class="btn" href="#">Explorer nos restaurants</button>
+            <div class="sectionContainer">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>
+                    Découvrez des restaurants d'exception, sélectionnés par nos soins
+                </p>
+                <button class="btn" href="">Explorer nos restaurants</button>
+            </div>
         </section>
-        
-        </div>
         <section class="Fonctionnement">
             <h2>Fonctionnement</h2>
             <div class="sectionContainer">
-            <article href="">Choissisez un restaurant</article>
-            <article href=""> Composez votre menu</article>
-            <article href="">Dégustez au restaurant</article>
-        </div>
+                <ul>
+                <li href="">
+                    <span>1</span>
+                    <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+                    <p>Choissisez un restaurant</p>
+                </li>
+                <li href="">
+                    <span>2</span>
+                    <i class="fa-solid fa-list" aria-hidden="true"></i>
+                    <p>Composez votre menu</p>
+                </li>
+                <li href="">
+                    <span>3</span>
+                    <i class="fa-solid fa-store" style="color: #9356DC;" aria-hidden="true"></i>
+                    <p>Dégustez au restaurant</p>
+                </li>
+            </ul>
+            </div>
         </section>
-        <section>
+        <section id="restaurants">
             <h2>Restaurants</h2>
             <div class="sectionContainer">
-            
-            <a href="">
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>  
-            </a>
-            <a href="">
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
-            </a>
-            <a href="">
-                <h3>À la française</h3>
-                <p>Cité Rouge</p>
-            </a>
-            <a href="">
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
-            </a>
-        </div>
+                <a href="" style="text-decoration: none;">
+                    <img src="./assets/img/restaurants/lapalettedugout.jpg" alt="lapalettedugout">
+
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+
+
+
+                </a>
+                <a href="" style="text-decoration: none;">
+                    <img src="./assets/img/restaurants/lanoteenchantee.jpg" alt="">
+
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+
+                </a>
+                <a href="" style="text-decoration: none;">
+                    <img src="./assets/img/restaurants/alafrançaise.jpg" alt="">
+
+                    <h3>À la française</h3>
+                    <p>Cité Rouge</p>
+
+                </a>
+                <a href="" style="text-decoration: none;">
+                    <img src="./assets/img/restaurants/ledelicedessens.jpg" alt="">
+
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+
+                </a>
+            </div>
         </section>
     </main>
     <footer>
-    <h4>ohmyfood</h4>
-    <article>
-        <p>proposer un restaurant</p>
-        <p>Devenir partenaire</p>
-        <p>mentions légales</p>
-        <p>contact</p>
-    </article>
+        <section>
+            <h3>ohmyfood</h3>
+
+            <article>
+                <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+                <p>Proposer un restaurant</p>
+            </article>
+            <article>
+                <i class="fa-solid fa-handshake fa-rotate-by" style="--fa-rotate-angle: 150deg;" aria-hidden="true"></i>
+                <p>Devenir partenaire</p>
+</article>
+            <particle>Mentions légales</particle>
+            <article>Contact</article>
+    </section>
     </footer>
 </body>
 

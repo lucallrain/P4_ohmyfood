@@ -1,45 +1,72 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: "Roboto", "Shrikhand", sans-serif;
   list-style: none;
+  cursor: default;
+}
+
+button {
+  padding: 15px 30px;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(360deg, #9356DC 21%, #FF79DA 100%);
+  border: solid transparent 0px;
+  box-shadow: rgba(0, 0, 0, 0.21) 5px 5px 25px 5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(360deg, #9356DC 0%, #FF79DA 100%);
+  box-shadow: rgba(0, 0, 0, 0.65) 5px 5px 70px 5px;
+  transition-duration: 4s;
 }
 
 header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
 }
 header img {
   width: 60%;
-  padding: 10px;
+  padding: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 header div {
   width: 100%;
+  height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   background: #EAEAEA;
   text-align: center;
-  padding: 10px;
   gap: 10px;
-  box-shadow: 0 0 2px 2px rgba(8, 0, 0, 0.2274509804);
+  border-top: 1px;
+  border-bottom: 1px;
+  box-shadow: 0 0 3px 3px rgba(8, 0, 0, 0.2274509804);
   font-weight: 500;
 }
 
 main {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 4px;
   width: 100%;
   height: 100%;
-  padding: 10px;
   gap: 30px;
 }
 main section {
+  background: #F6F6F6;
+  padding: 15px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -47,30 +74,123 @@ main section {
   align-items: flex-start;
   gap: 30px;
 }
+main section.Fonctionnement {
+  background-color: white;
+}
 main div {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  gap: 20px;
+  gap: 30px;
   text-align: center;
-}
-main button {
-  font-weight: 400;
-  font-size: 16px;
-  color: white;
-  background: linear-gradient(360deg, #9356DC 21%, #FF79DA 100%);
-  padding: 18px 22px;
-  border: solid transparent 0px;
-  box-shadow: rgba(0, 0, 0, 0.21) 5px 5px 25px 5px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-main button:hover {
-  background: linear-gradient(360deg, #9356DC 0%, #FF79DA 100%);
-  box-shadow: rgba(0, 0, 0, 0.65) 5px 5px 70px 5px;
-  transition-duration: 4s;
 }
 main p {
   font-size: 18px;
   font-weight: 100;
+  text-align: center;
+}
+main ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+main ul li {
+  background: #F6F6F6;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 30px;
+  align-items: center;
+  text-align: center;
+  border: solid transparent;
+  border-radius: 25px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+}
+main ul li i {
+  color: gray;
+  width: 16px;
+  height: 18px;
+}
+main ul li span {
+  align-items: center;
+  color: white;
+  width: 7%;
+  background-color: #9356DC;
+  border: solid transparent;
+  border-radius: 200px;
+  position: absolute;
+  left: 5px;
+  font-size: 14px;
+}
+main a {
+  color: black;
+  width: 100%;
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 25px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+}
+main a p {
+  padding-left: 10px;
+  padding-top: 5px;
+  font-weight: 300;
+}
+main a img {
+  width: 100%;
+  height: 70%;
+  border-radius: 25px 25px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+main a h3 {
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700px;
+  line-height: 21px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+footer {
+  color: white;
+  width: 100%;
+  height: 186px;
+  padding: 22px;
+  display: flex;
+  background-color: #353535;
+}
+footer section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer section h3 {
+  width: 100%;
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+}
+footer section article {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+footer section article i {
+  width: 16px;
+  height: 16px;
 }/*# sourceMappingURL=index.css.map */
