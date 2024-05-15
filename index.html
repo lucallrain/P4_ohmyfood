@@ -25,7 +25,7 @@
     <header>
         <img src="./assets/img/logo/ohmyfood.png" alt="logo" />
 
-        <div class="localisation.nav">
+        <div class="jeanmichel">
             <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
             <p>Paris, Belleville</p>
         </div>
@@ -37,62 +37,68 @@
                 <p>
                     Découvrez des restaurants d'exception, sélectionnés par nos soins
                 </p>
-                <button class="btn" href="">Explorer nos restaurants</button>
+                <button onclick="window.location.href='#restaurants'" type="button" class="btn" href="#restaurants">Explorer nos restaurants</button>
             </div>
         </section>
         <section class="Fonctionnement">
             <h2>Fonctionnement</h2>
             <div class="sectionContainer">
                 <ul>
-                <li href="">
-                    <span>1</span>
-                    <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
-                    <p>Choissisez un restaurant</p>
-                </li>
-                <li href="">
-                    <span>2</span>
-                    <i class="fa-solid fa-list" aria-hidden="true"></i>
-                    <p>Composez votre menu</p>
-                </li>
-                <li href="">
-                    <span>3</span>
-                    <i class="fa-solid fa-store" style="color: #9356DC;" aria-hidden="true"></i>
-                    <p>Dégustez au restaurant</p>
-                </li>
-            </ul>
+                    <li href="">
+                        <span>1</span>
+                        <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+                        <p>Choissisez un restaurant</p>
+                    </li>
+                    <li href="">
+                        <span>2</span>
+                        <i class="fa-solid fa-list" aria-hidden="true"></i>
+                        <p>Composez votre menu</p>
+                    </li>
+                    <li href="">
+                        <span>3</span>
+                        <i class="fa-solid fa-store" style="color: #9356DC;" aria-hidden="true"></i>
+                        <p>Dégustez au restaurant</p>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section id="restaurants">
+        <section class="Restaurants" id="restaurants">
             <h2>Restaurants</h2>
             <div class="sectionContainer">
-                <a href="" style="text-decoration: none;">
+                <a href="./index2.html"  style="text-decoration: none;">
                     <img src="./assets/img/restaurants/lapalettedugout.jpg" alt="lapalettedugout">
-
                     <h3>La palette du goût</h3>
                     <p>Ménilmontant</p>
-
-
-
+                    <span>Nouveau</span>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid  fa-heart fa-heart-colored"></i>
                 </a>
-                <a href="" style="text-decoration: none;">
+                <a  style="text-decoration: none;">
                     <img src="./assets/img/restaurants/lanoteenchantee.jpg" alt="">
-
                     <h3>La note enchantée</h3>
                     <p>Charonne</p>
-
+                    <span>Nouveau</span>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart fa-heart-colored"></i>
+                    
                 </a>
-                <a href="" style="text-decoration: none;">
+                <a  style="text-decoration: none;">
                     <img src="./assets/img/restaurants/alafrançaise.jpg" alt="">
-
+                    
                     <h3>À la française</h3>
                     <p>Cité Rouge</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart fa-heart-colored" ></i>
+                    
 
                 </a>
-                <a href="" style="text-decoration: none;">
+                <a  style="text-decoration: none;">
                     <img src="./assets/img/restaurants/ledelicedessens.jpg" alt="">
-
                     <h3>Le délice des sens</h3>
                     <p>Folie-Méricourt</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart fa-heart-colored"></i>
+            
 
                 </a>
             </div>
@@ -109,10 +115,10 @@
             <article>
                 <i class="fa-solid fa-handshake fa-rotate-by" style="--fa-rotate-angle: 150deg;" aria-hidden="true"></i>
                 <p>Devenir partenaire</p>
-</article>
+            </article>
             <particle>Mentions légales</particle>
             <article>Contact</article>
-    </section>
+        </section>
     </footer>
 </body>
 
