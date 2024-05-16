@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="shortcut icon" href="./assets/img/logo/ohmyfood@2x.svg" />
+    <link rel="shortcut icon" href="./assets/img/ohmyfood@2x.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>Ohmyfood</title>
@@ -23,16 +23,17 @@
 
 <body>
     <header>
-        <img src="./assets/img/logo/ohmyfood.png" alt="logo" />
+        <img src="./assets/img/ohmyfood@2x.svg" alt="logo" />
 
-        <div class="jeanmichel">
-            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-            <p>Paris, Belleville</p>
-        </div>
+        
     </header>
     <main>
+        <section class="position">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <p>Paris, Belleville</p>
+        </section>
         <section class="Explorer">
-            <div class="sectionContainer">
+            <div class="explorer__Container">
                 <h2>Réservez le menu qui vous convient</h2>
                 <p>
                     Découvrez des restaurants d'exception, sélectionnés par nos soins
@@ -41,20 +42,21 @@
             </div>
         </section>
         <section class="Fonctionnement">
-            <h2>Fonctionnement</h2>
-            <div class="sectionContainer">
-                <ul>
-                    <li href="">
+            
+            <div class="fonction__container">
+                <h2>Fonctionnement</h2>
+                <ul class="ul__fonction">
+                    <li class="li__fonction" href="">
                         <span>1</span>
                         <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
                         <p>Choissisez un restaurant</p>
                     </li>
-                    <li href="">
+                    <li class="li__fonction" href="">
                         <span>2</span>
                         <i class="fa-solid fa-list" aria-hidden="true"></i>
                         <p>Composez votre menu</p>
                     </li>
-                    <li href="">
+                    <li  class="li__fonction" href="">
                         <span>3</span>
                         <i class="fa-solid fa-store" style="color: #9356DC;" aria-hidden="true"></i>
                         <p>Dégustez au restaurant</p>
@@ -63,18 +65,19 @@
             </div>
         </section>
         <section class="Restaurants" id="restaurants">
-            <h2>Restaurants</h2>
-            <div class="sectionContainer">
-                <a href="./index2.html"  style="text-decoration: none;">
-                    <img src="./assets/img/restaurants/lapalettedugout.jpg" alt="lapalettedugout">
+            
+            <div class="restaurants__container">
+                <h2>Restaurants</h2>
+                <a class="dish" href="./index2.html"  style="text-decoration: none;">
+                    <img src="./assets/img/lapalettedugout.jpg" alt="restaurant">
                     <h3>La palette du goût</h3>
                     <p>Ménilmontant</p>
                     <span>Nouveau</span>
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-solid  fa-heart fa-heart-colored"></i>
                 </a>
-                <a  style="text-decoration: none;">
-                    <img src="./assets/img/restaurants/lanoteenchantee.jpg" alt="">
+                <a class="dish" style="text-decoration: none;">
+                    <img src="./assets/img/lanoteenchantee.jpg" alt="restaurant">
                     <h3>La note enchantée</h3>
                     <p>Charonne</p>
                     <span>Nouveau</span>
@@ -82,8 +85,8 @@
                     <i class="fa-solid fa-heart fa-heart-colored"></i>
                     
                 </a>
-                <a  style="text-decoration: none;">
-                    <img src="./assets/img/restaurants/alafrançaise.jpg" alt="">
+                <a class="dish" style="text-decoration: none;">
+                    <img src="./assets/img/alafrançaise.jpg" alt="restaurant">
                     
                     <h3>À la française</h3>
                     <p>Cité Rouge</p>
@@ -92,8 +95,8 @@
                     
 
                 </a>
-                <a  style="text-decoration: none;">
-                    <img src="./assets/img/restaurants/ledelicedessens.jpg" alt="">
+                <a class="dish" style="text-decoration: none;">
+                    <img src="/assets/img/ledelicedessens.jpg" alt="restaurant">
                     <h3>Le délice des sens</h3>
                     <p>Folie-Méricourt</p>
                     <i class="fa-regular fa-heart"></i>
