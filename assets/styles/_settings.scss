@@ -20,13 +20,14 @@ button.btn {
   box-shadow: rgba(0, 0, 0, 0.21) 5px 5px 25px 5px;
   border-radius: 50px;
   cursor: pointer;
+  transition: 250ms;
 
 
 
   &:hover {
     background: linear-gradient(360deg, $color1 0%, $color2 100%);
-    box-shadow: rgba(0, 0, 0, 0.250) 5px 5px 25px 5px;
-    transition-duration: 300ms;
+    box-shadow: rgba(0, 0, 0, 0.450) 5px 5px 25px 5px;
+    transition: 250ms;
 
 
 
