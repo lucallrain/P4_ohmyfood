@@ -30,7 +30,6 @@ h2 {
 
 header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -41,6 +40,12 @@ header img {
   padding: 15px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+header i {
+  position: relative;
+  right: 50px;
+  font-size: 25px;
+  color: black;
 }
 
 @media screen and (min-width: 375.1px) and (max-width: 1669px) {
@@ -83,8 +88,7 @@ main .position p {
   font-weight: 500;
   text-align: center;
 }
-
-.explorer__Container {
+main .explorer__Container {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -95,25 +99,22 @@ main .position p {
   text-align: center;
   padding: 40px 10px 50px 10px;
 }
-.explorer__Container p {
+main .explorer__Container p {
   font-weight: 300;
   font-size: 1.2rem;
 }
-
-.Fonctionnement {
+main .Fonctionnement {
   width: 100%;
   padding: 50px 20px 50px 20px;
 }
-
-.fonction__container {
+main .fonction__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
   gap: 30px;
 }
-
-.ul__fonction {
+main .ul__fonction {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,7 +122,7 @@ main .position p {
   width: 100%;
   gap: 30px;
 }
-.ul__fonction .li__fonction {
+main .ul__fonction .li__fonction {
   background: #F6F6F6;
   width: 100%;
   height: 70px;
@@ -134,15 +135,15 @@ main .position p {
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
   gap: 20px;
 }
-.ul__fonction .li__fonction i {
+main .ul__fonction .li__fonction i {
   color: gray;
   width: 16px;
   height: 18px;
 }
-.ul__fonction p {
+main .ul__fonction p {
   font-weight: 500;
 }
-.ul__fonction span {
+main .ul__fonction span {
   align-items: center;
   color: white;
   width: 24px;
@@ -154,8 +155,7 @@ main .position p {
   left: -12px;
   font-size: 14px;
 }
-
-.Restaurants {
+main .Restaurants {
   width: 100%;
   height: 100%;
   background-color: #f6f6f6;
@@ -166,8 +166,7 @@ main .position p {
   align-items: center;
   gap: 30px;
 }
-
-.restaurants__container {
+main .restaurants__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -175,8 +174,7 @@ main .position p {
   width: 330px;
   gap: 30px;
 }
-
-.dish {
+main .dish {
   color: black;
   width: 330px;
   height: 240px;
@@ -189,7 +187,7 @@ main .position p {
   overflow: hidden;
   cursor: pointer;
 }
-.dish i.fa-solid {
+main .dish i.fa-solid {
   font-size: 22px;
   position: absolute;
   transform: translate(275px, 200px);
@@ -203,20 +201,20 @@ main .position p {
   -webkit-text-stroke-width: 0px;
   transition: 250ms;
 }
-.dish i.fa-solid:hover {
+main .dish i.fa-solid:hover {
   opacity: 100%;
   transition: 250ms;
 }
-.dish i.fa-regular {
+main .dish i.fa-regular {
   font-size: 22px;
   position: absolute;
   transform: translate(275px, 200px);
   opacity: 100%;
 }
-.dish i.fa-regular:hover {
+main .dish i.fa-regular:hover {
   opacity: 0%;
 }
-.dish span {
+main .dish span {
   color: #269e80;
   font-weight: 700;
   display: flex;
@@ -231,22 +229,33 @@ main .position p {
   left: 220px;
   bottom: 225px;
 }
-.dish img {
+main .dish img {
   width: 100%;
   height: 170px;
   border-radius: 15px 15px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.dish h3 {
+main .dish h3 {
   display: flex;
   width: 100%;
   font-size: 18px;
   padding-left: 10px;
 }
-.dish p {
+main .dish p {
   padding-left: 10px;
   font-weight: 300;
+}
+main .background__img img {
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 300px;
+  width: 100%;
+}
+main .background__img .main__wrapper .dish h1 {
+  font-family: "shrikhand", sans-serif;
 }
 
 @media screen and (min-width: 375.1px) and (max-width: 1669px) {
