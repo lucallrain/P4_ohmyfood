@@ -43,6 +43,14 @@ header img {
      object-fit: cover;
 }
 
+@media screen and (min-width: 375.1px) and (max-width: 1669px) {
+  header {
+    height: 96px;
+  }
+  header img {
+    max-width: 250px;
+  }
+}
 main {
   background-color: white;
   display: flex;
@@ -71,7 +79,7 @@ main .position {
   margin-bottom: 3px;
 }
 main .position p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   text-align: center;
 }
@@ -86,6 +94,10 @@ main .position p {
   gap: 30px;
   text-align: center;
   padding: 40px 10px 50px 10px;
+}
+.explorer__Container p {
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
 .Fonctionnement {
@@ -148,6 +160,11 @@ main .position p {
   height: 100%;
   background-color: #f6f6f6;
   padding: 50px 20px 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .restaurants__container {
@@ -211,7 +228,7 @@ main .position p {
   border-radius: 3px;
   text-align: center;
   align-items: center;
-  left: 235px;
+  left: 220px;
   bottom: 225px;
 }
 .dish img {
@@ -232,10 +249,55 @@ main .position p {
   font-weight: 300;
 }
 
+@media screen and (min-width: 375.1px) and (max-width: 1669px) {
+  main .position {
+    border: none;
+    box-shadow: none;
+    margin: auto;
+  }
+  main .explorer__Container {
+    padding: 40px 10px 30px 10px;
+  }
+  main .explorer__Container h2 {
+    font-size: 2.7rem;
+  }
+  main .Fonctionnement .fonction__container h2 {
+    padding-left: 150px;
+  }
+  main .Fonctionnement .fonction__container .ul__fonction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  main .Fonctionnement .fonction__container .ul__fonction .li__fonction {
+    width: 335px;
+    height: 72px;
+  }
+  main .Restaurants h2 {
+    width: 100%;
+    padding-left: 150px;
+  }
+  main .Restaurants .restaurants__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 50px;
+  }
+  main .Restaurants .dish {
+    width: 490px;
+    height: 250px;
+  }
+  main .Restaurants i {
+    margin-left: 150px;
+  }
+}
 footer {
   color: white;
   width: 100%;
-  height: 186px;
   padding: 22px;
   display: flex;
   background-color: #353535;
@@ -244,8 +306,8 @@ footer section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
+  gap: 30px;
 }
 footer section h3 {
   width: 100%;
@@ -254,15 +316,51 @@ footer section h3 {
   font-size: 18px;
   font-style: normal;
 }
-footer section article {
+footer section ul {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer section ul li {
   display: flex;
   flex-direction: row;
   gap: 10px;
   text-align: center;
   align-items: center;
 }
-footer section article i {
+footer section ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer section ul i {
   width: 16px;
   height: 16px;
+}
+
+@media screen and (min-width: 375.1px) and (max-width: 1669px) {
+  footer {
+    height: 114px;
+  }
+  footer section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 75px;
+    padding: 10px;
+  }
+  footer section h3 {
+    width: 120px;
+  }
+  footer section ul {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 30px;
+  }
+  footer section ul li {
+    align-items: flex-end;
+  }
 }/*# sourceMappingURL=index.css.map */
