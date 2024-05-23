@@ -28,6 +28,13 @@ h2 {
   font-size: 1.8rem;
 }
 
+h1 {
+  font-family: "shrikhand", sans-serif;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -48,7 +55,7 @@ header i {
   color: black;
 }
 
-@media screen and (min-width: 375.1px) and (max-width: 1669px) {
+@media screen and (min-width: 375.1px) and (max-width: 1440px) {
   header {
     height: 96px;
   }
@@ -176,7 +183,7 @@ main .restaurants__container {
 }
 main .dish {
   color: black;
-  width: 330px;
+  min-width: 330px;
   height: 240px;
   display: flex;
   gap: 10px;
@@ -186,6 +193,21 @@ main .dish {
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   cursor: pointer;
+}
+main .dish span {
+  color: #269e80;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 8px 10px 8px 10px;
+  border: solid rgba(0, 0, 0, 0) 1px;
+  background-color: #99e2d0;
+  border-radius: 3px;
+  text-align: center;
+  align-items: center;
+  left: 220px;
+  bottom: 225px;
 }
 main .dish i.fa-solid {
   font-size: 22px;
@@ -214,21 +236,6 @@ main .dish i.fa-regular {
 main .dish i.fa-regular:hover {
   opacity: 0%;
 }
-main .dish span {
-  color: #269e80;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  padding: 8px 10px 8px 10px;
-  border: solid rgba(0, 0, 0, 0) 1px;
-  background-color: #99e2d0;
-  border-radius: 3px;
-  text-align: center;
-  align-items: center;
-  left: 220px;
-  bottom: 225px;
-}
 main .dish img {
   width: 100%;
   height: 170px;
@@ -254,40 +261,41 @@ main .background__img img {
   min-height: 300px;
   width: 100%;
 }
-main .background__img .main__wrapper .dish h1 {
-  font-family: "shrikhand", sans-serif;
+main .heart__position {
+  position: absolute;
+  left: 55px;
+  top: 50px;
 }
-
-@media screen and (min-width: 375.1px) and (max-width: 1669px) {
-  main .position {
+@media screen and (min-width: 375.1px) and (max-width: 1440px) {
+  main main .position {
     border: none;
     box-shadow: none;
     margin: auto;
   }
-  main .explorer__Container {
+  main main .explorer__Container {
     padding: 40px 10px 30px 10px;
   }
-  main .explorer__Container h2 {
+  main main .explorer__Container h2 {
     font-size: 2.7rem;
   }
-  main .Fonctionnement .fonction__container h2 {
+  main main .Fonctionnement .fonction__container h2 {
     padding-left: 150px;
   }
-  main .Fonctionnement .fonction__container .ul__fonction {
+  main main .Fonctionnement .fonction__container .ul__fonction {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  main .Fonctionnement .fonction__container .ul__fonction .li__fonction {
-    width: 335px;
+  main main .Fonctionnement .fonction__container .ul__fonction .li__fonction {
+    min-width: 335px;
     height: 72px;
   }
-  main .Restaurants h2 {
+  main main .Restaurants h2 {
     width: 100%;
     padding-left: 150px;
   }
-  main .Restaurants .restaurants__container {
+  main main .Restaurants .restaurants__container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -296,14 +304,18 @@ main .background__img .main__wrapper .dish h1 {
     width: 80%;
     gap: 50px;
   }
-  main .Restaurants .dish {
+  main main .Restaurants .dish {
     width: 490px;
     height: 250px;
   }
-  main .Restaurants i {
+  main main .Restaurants .dish span {
+    left: 380px;
+  }
+  main main .Restaurants i {
     margin-left: 150px;
   }
 }
+
 footer {
   color: white;
   width: 100%;
@@ -347,7 +359,7 @@ footer section ul i {
   height: 16px;
 }
 
-@media screen and (min-width: 375.1px) and (max-width: 1669px) {
+@media screen and (min-width: 375.1px) and (max-width: 1440px) {
   footer {
     height: 114px;
   }

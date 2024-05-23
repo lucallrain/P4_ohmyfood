@@ -142,7 +142,7 @@ main {
 
     .dish {
         color: black;
-        width: 330px;
+        min-width: 330px;
         height: 240px;
         display: flex;
         gap: 10px;
@@ -152,6 +152,22 @@ main {
         box-shadow: 0 0 10px 1px rgb(0 0 0 / 20%);
         overflow: hidden;
         cursor: pointer;
+
+        span {
+            color: #269e80;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            padding: 8px 10px 8px 10px;
+            border: solid rgba(0, 0, 0, 0) 1px;
+            background-color: #99e2d0;
+            border-radius: 3px;
+            text-align: center;
+            align-items: center;
+            left: 220px;
+            bottom: 225px;
+        }
 
         i.fa-solid {
 
@@ -187,21 +203,7 @@ main {
 
         }
 
-        span {
-            color: #269e80;
-            font-weight: 700;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            padding: 8px 10px 8px 10px;
-            border: solid rgba(0, 0, 0, 0) 1px;
-            background-color: #99e2d0;
-            border-radius: 3px;
-            text-align: center;
-            align-items: center;
-            left: 220px;
-            bottom: 225px;
-        }
+
 
         img {
             width: 100%;
@@ -224,6 +226,7 @@ main {
 
 
     }
+
     .background__img {
         img {
             height: 200px;
@@ -233,20 +236,20 @@ main {
             min-height: 300px;
             width: 100%;
         }
+    }
 
-    .main__wrapper {
-        .dish{
-            h1{
-            font-family: 'shrikhand', sans-serif;
-            }
-        }
-        }
+    .heart__position {
+        position: absolute;
+        left: 55px;
+        top: 50px;
+        
+
+       
 
     }
 
 
 
-}
 
 
 
@@ -260,71 +263,79 @@ main {
 
 
 
-@media screen and (min-width : 375.1px) and (max-width: 1669px) {
-    main {
 
-        .position {
-            border: none;
-            box-shadow: none;
-            margin: auto;
-        }
 
-        .explorer__Container {
-            h2 {
-                font-size: 2.7rem;
+
+
+    @media screen and (min-width : 375.1px) and (max-width: 1440px) {
+        main {
+
+            .position {
+                border: none;
+                box-shadow: none;
+                margin: auto;
             }
 
-            padding: 40px 10px 30px 10px;
-        }
-
-        .Fonctionnement {
-
-            .fonction__container {
-
+            .explorer__Container {
                 h2 {
-                    padding-left: 150px;
+                    font-size: 2.7rem;
                 }
 
-                .ul__fonction {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
+                padding: 40px 10px 30px 10px;
+            }
 
-                    .li__fonction {
-                        width: 335px;
-                        height: 72px;
+            .Fonctionnement {
+
+                .fonction__container {
+
+                    h2 {
+                        padding-left: 150px;
+                    }
+
+                    .ul__fonction {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+
+                        .li__fonction {
+                            min-width: 335px;
+                            height: 72px;
+                        }
                     }
                 }
             }
+
+            .Restaurants {
+
+                h2 {
+                    width: 100%;
+                    padding-left: 150px;
+                }
+
+                .restaurants__container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    width: 80%;
+                    gap: 50px;
+                }
+
+                .dish {
+                    width: 490px;
+                    height: 250px;
+
+                    span {
+                        left: 380px;
+                    }
+                }
+
+                i {
+                    margin-left: 150px;
+                }
+            }
         }
-
-        .Restaurants {
-
-            h2 {
-                width: 100%;
-                padding-left: 150px;
-            }
-
-            .restaurants__container {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                flex-wrap: wrap;
-                width: 80%;
-                gap: 50px;
-            }
-
-            .dish {
-                width: 490px;
-                height: 250px;
-            }
-
-            i {
-                margin-left: 150px;
-            }
-        }
-
     }
 }
