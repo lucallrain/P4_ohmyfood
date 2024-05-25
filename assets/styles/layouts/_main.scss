@@ -83,7 +83,7 @@ main {
 
         .li__fonction {
             background: #F6F6F6;
-            width: 100%;
+            width: 335px;
             height: 70px;
             display: flex;
             flex-direction: row;
@@ -242,9 +242,9 @@ main {
         position: absolute;
         left: 55px;
         top: 50px;
-        
 
-       
+
+
 
     }
 
@@ -264,77 +264,82 @@ main {
 
 
 
+}
 
 
+@media screen and (min-width : 768px) {
+    main {
 
-    @media screen and (min-width : 375.1px) and (max-width: 1440px) {
-        main {
+        .position {
+            border: none;
+            box-shadow: none;
+            margin: auto;
+        }
 
-            .position {
-                border: none;
-                box-shadow: none;
-                margin: auto;
+        .explorer__Container {
+            h2 {
+                font-size: 2.7rem;
             }
 
-            .explorer__Container {
-                h2 {
-                    font-size: 2.7rem;
-                }
+            padding: 40px 10px 30px 10px;
+        }
 
-                padding: 40px 10px 30px 10px;
-            }
+        .Fonctionnement {
 
-            .Fonctionnement {
-
-                .fonction__container {
-
-                    h2 {
-                        padding-left: 150px;
-                    }
-
-                    .ul__fonction {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
-
-                        .li__fonction {
-                            min-width: 335px;
-                            height: 72px;
-                        }
-                    }
-                }
-            }
-
-            .Restaurants {
+            .fonction__container {
 
                 h2 {
-                    width: 100%;
                     padding-left: 150px;
                 }
 
-                .restaurants__container {
+                .ul__fonction {
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-around;
+                    justify-content: center;
                     align-items: center;
-                    flex-wrap: wrap;
-                    width: 80%;
-                    gap: 50px;
-                }
 
-                .dish {
-                    width: 490px;
-                    height: 250px;
-
-                    span {
-                        left: 380px;
+                    .li__fonction {
+                        width: 335px;
+                        height: 72px;
                     }
                 }
+            }
+        }
 
-                i {
-                    margin-left: 150px;
+        .Restaurants {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                width: 80%;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            .restaurants__container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 80%;
+                gap: 50px;
+            }
+
+            .dish {
+                width: 490px;
+                height: 250px;
+
+                span {
+                    left: 380px;
                 }
+            }
+
+            i {
+                margin-left: 150px;
             }
         }
     }

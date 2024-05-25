@@ -131,7 +131,7 @@ main .ul__fonction {
 }
 main .ul__fonction .li__fonction {
   background: #F6F6F6;
-  width: 100%;
+  width: 335px;
   height: 70px;
   display: flex;
   flex-direction: row;
@@ -266,36 +266,44 @@ main .heart__position {
   left: 55px;
   top: 50px;
 }
-@media screen and (min-width: 375.1px) and (max-width: 1440px) {
-  main main .position {
+
+@media screen and (min-width: 768px) {
+  main .position {
     border: none;
     box-shadow: none;
     margin: auto;
   }
-  main main .explorer__Container {
+  main .explorer__Container {
     padding: 40px 10px 30px 10px;
   }
-  main main .explorer__Container h2 {
+  main .explorer__Container h2 {
     font-size: 2.7rem;
   }
-  main main .Fonctionnement .fonction__container h2 {
+  main .Fonctionnement .fonction__container h2 {
     padding-left: 150px;
   }
-  main main .Fonctionnement .fonction__container .ul__fonction {
+  main .Fonctionnement .fonction__container .ul__fonction {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  main main .Fonctionnement .fonction__container .ul__fonction .li__fonction {
-    min-width: 335px;
+  main .Fonctionnement .fonction__container .ul__fonction .li__fonction {
+    width: 335px;
     height: 72px;
   }
-  main main .Restaurants h2 {
-    width: 100%;
-    padding-left: 150px;
+  main .Restaurants {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  main main .Restaurants .restaurants__container {
+  main .Restaurants h2 {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  main .Restaurants .restaurants__container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -304,18 +312,17 @@ main .heart__position {
     width: 80%;
     gap: 50px;
   }
-  main main .Restaurants .dish {
+  main .Restaurants .dish {
     width: 490px;
     height: 250px;
   }
-  main main .Restaurants .dish span {
+  main .Restaurants .dish span {
     left: 380px;
   }
-  main main .Restaurants i {
+  main .Restaurants i {
     margin-left: 150px;
   }
 }
-
 footer {
   color: white;
   width: 100%;
