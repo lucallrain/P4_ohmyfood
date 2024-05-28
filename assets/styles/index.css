@@ -43,7 +43,7 @@ header {
   height: 100%;
 }
 header img {
-  width: 60%;
+  width: 300px;
   padding: 15px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -55,7 +55,7 @@ header i {
   color: black;
 }
 
-@media screen and (min-width: 375.1px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) {
   header {
     height: 96px;
   }
@@ -170,20 +170,17 @@ main .Restaurants {
 main .restaurants__container {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: flex-start;
   gap: 30px;
 }
-main .restaurants__container h2 {
-  padding-right: 175px;
-}
-main .card__container {
+main .restaurants__container .card__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 50px;
 }
-main .dish {
+main .restaurants__container .dish {
   color: black;
   min-width: 330px;
   height: 240px;
@@ -196,7 +193,7 @@ main .dish {
   overflow: hidden;
   cursor: pointer;
 }
-main .dish span {
+main .restaurants__container .dish span {
   color: #269e80;
   font-weight: 700;
   display: flex;
@@ -211,7 +208,7 @@ main .dish span {
   left: 220px;
   bottom: 225px;
 }
-main .dish i.fa-solid {
+main .restaurants__container .dish i.fa-solid {
   font-size: 22px;
   position: absolute;
   transform: translate(275px, 200px);
@@ -225,37 +222,37 @@ main .dish i.fa-solid {
   -webkit-text-stroke-width: 0px;
   transition: 250ms;
 }
-main .dish i.fa-solid:hover {
+main .restaurants__container .dish i.fa-solid:hover {
   opacity: 100%;
   transition: 250ms;
 }
-main .dish i.fa-regular {
+main .restaurants__container .dish i.fa-regular {
   font-size: 22px;
   position: absolute;
   transform: translate(275px, 200px);
   opacity: 100%;
 }
-main .dish i.fa-regular:hover {
+main .restaurants__container .dish i.fa-regular:hover {
   opacity: 0%;
 }
-main .dish img {
+main .restaurants__container .dish img {
   width: 100%;
   height: 170px;
   border-radius: 15px 15px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .dish h3 {
+main .restaurants__container .dish h3 {
   display: flex;
   width: 100%;
   font-size: 18px;
   padding-left: 10px;
 }
-main .dish p {
+main .restaurants__container .dish p {
   padding-left: 10px;
   font-weight: 300;
 }
-main .background__img img {
+main .restaurants__container .background__img img {
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -263,7 +260,7 @@ main .background__img img {
   min-height: 300px;
   width: 100%;
 }
-main .heart__position {
+main .restaurants__container .heart__position {
   position: absolute;
   left: 55px;
   top: 50px;
@@ -281,6 +278,9 @@ main .heart__position {
   main .explorer__Container h2 {
     font-size: 2.7rem;
   }
+  main .Fonctionnement .fonction__container {
+    width: 80%;
+  }
   main .Fonctionnement .fonction__container .ul__fonction {
     display: flex;
     flex-direction: row;
@@ -292,17 +292,14 @@ main .heart__position {
     max-height: 72px;
   }
   main .Restaurants .restaurants__container {
-    width: 1440px;
-  }
-  main .Restaurants .restaurants__container h2 {
-    padding-right: 890px;
+    width: 80%;
   }
   main .Restaurants .restaurants__container .card__container {
-    gap: 70px;
+    gap: 100px;
   }
   main .Restaurants .restaurants__container .dish {
-    width: 490px;
-    height: 250px;
+    width: 500px;
+    height: 260px;
   }
   main .Restaurants .restaurants__container .dish span {
     left: 380px;
@@ -354,7 +351,7 @@ footer section ul i {
   height: 16px;
 }
 
-@media screen and (min-width: 375.1px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) {
   footer {
     height: 114px;
   }
