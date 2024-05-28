@@ -111,14 +111,15 @@ main .explorer__Container p {
   font-size: 1.2rem;
 }
 main .Fonctionnement {
-  width: 100%;
   padding: 50px 20px 50px 20px;
+  display: flex;
 }
 main .fonction__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  align-items: flex-start;
+  text-align: center;
   gap: 30px;
 }
 main .ul__fonction {
@@ -126,7 +127,6 @@ main .ul__fonction {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   gap: 30px;
 }
 main .ul__fonction .li__fonction {
@@ -163,23 +163,25 @@ main .ul__fonction span {
   font-size: 14px;
 }
 main .Restaurants {
-  width: 100%;
-  height: 100%;
   background-color: #f6f6f6;
   padding: 50px 20px 50px 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
 }
 main .restaurants__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  width: 330px;
+  text-align: center;
   gap: 30px;
+}
+main .restaurants__container h2 {
+  padding-right: 175px;
+}
+main .card__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 main .dish {
   color: black;
@@ -279,9 +281,6 @@ main .heart__position {
   main .explorer__Container h2 {
     font-size: 2.7rem;
   }
-  main .Fonctionnement .fonction__container h2 {
-    padding-left: 150px;
-  }
   main .Fonctionnement .fonction__container .ul__fonction {
     display: flex;
     flex-direction: row;
@@ -289,37 +288,26 @@ main .heart__position {
     align-items: center;
   }
   main .Fonctionnement .fonction__container .ul__fonction .li__fonction {
-    width: 335px;
-    height: 72px;
-  }
-  main .Restaurants {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  main .Restaurants h2 {
-    width: 80%;
-    display: flex;
-    justify-content: flex-start;
+    max-width: 335px;
+    max-height: 72px;
   }
   main .Restaurants .restaurants__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 80%;
-    gap: 50px;
+    width: 1440px;
   }
-  main .Restaurants .dish {
+  main .Restaurants .restaurants__container h2 {
+    padding-right: 890px;
+  }
+  main .Restaurants .restaurants__container .card__container {
+    gap: 70px;
+  }
+  main .Restaurants .restaurants__container .dish {
     width: 490px;
     height: 250px;
   }
-  main .Restaurants .dish span {
+  main .Restaurants .restaurants__container .dish span {
     left: 380px;
   }
-  main .Restaurants i {
+  main .Restaurants .restaurants__container i {
     margin-left: 150px;
   }
 }
