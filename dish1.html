@@ -24,25 +24,147 @@
 <body>
     <header>
         <a href="/">
-            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            <i id="back__arrow" class="fa-solid fa-arrow-left" style="color: black;" aria-hidden="true"></i>
         </a>
-        <img src="./assets/img/ohmyfood@2x.svg" alt="">
+        <img id="img__menu" src="./assets/img/ohmyfood@2x.svg" alt="">
     </header>
-    <main class="main__wrapper">
+    <main>
+        <div class="main__wrapper">
         <div class="background__img">
             <img src="./assets/img/lapalettedugout.jpg" alt="lapalettedugout">
         </div>
-        <section class="dish">
+        <section class="menu">
             <h1>La palette du gout</h1>
-            <div class="heart__position">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-heart fa-heart-colored"></i>
-        </div>
-            <ul>
+            <i id="heart__position1" class="fa-regular fa-heart"></i>
+            <i id="heart__position2" class="fa-solid fa-heart fa-heart-colored"></i>
+            <ul class="flex__container">
+                <li class="item__container">
+                    <h2>ENTRÉES</h2>
+                    <ul class=" items items1">
+                        <li class="item__text">
+                            <h3>Fricassée d'escargot</h3>
+                            <p>Au piment d'Espelette</p>
+                        </li>
+                        <li class="item__validate">
+                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                        </li>
+                        <li class="price">25€</li>
+                    </ul>
+                    <ul class=" items items2">
+                        <li class="item__text">
+                            <h3>Foie gras de canard mi-cuit</h3>
+                            <p>Et ses copeaux de truffe noire</p>
+                        </li>
+                        <li class="item__validate">
+                            <i  id="check__point" class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                        </li>
+                        <li class="price">35€</li>
+                    </ul>
+                    <ul class=" items items3">
+                        <li class="item__text">
+                            <h3>Oeuf au plat</h3>
+                            <p>Assaisonné à la truffe sur son lit de caviar</p>
+                        </li>
+                        <li class="item__validate">
+                            <i  id="check__point" class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                        </li>
+                        <li class="price">20€</li>
+                    </ul>
 
+                </li>
+                <li class="item__container">
+                    <h2>PLATS</h2>
+                    <ul class="items 1">
+                        <li class="item__text">
+                            <h3>Filet de bœuf aux herbes</h3>
+                            <p>Accompagné de sa ribambelle de légumes</p>
+                        </li>
+                        <li class="item__validate">
+                            <i  id="check__point" class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                        </li>
+                        <li class="price">40€</li>
+                    </ul>
+                    <ul class="items 2">
+                        <li class="item__text">
+                            <h3>Parmentier de queue de bœuf</h3>
+                            <p>À la truffe noire sur sa purée de panais</p>
+                        </li>
+                        <li class="item__validate">
+                            <i  id="check__point" class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                        </li>
+                        <li class="price">35€</li>
+                    </ul>
+                    <ul class="items 3">
+                        <li class="item__text">
+                            <h3>Filet de turbot</h3>
+                            <p>Aux agrumes</p>
+                        </li>
+                        <li class="item__validate">
+                            <i  id="check__point" class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                        </li>
+                        <li class="price">44€</li>
+                    </ul>
+                </li>
+                <li class="item__container">
+                    <h2>DESSERTS</h2>
+                    <ul class="items 1">
+                        <li class="item__text">
+                            <h3>Paris-Brest</h3>
+                            <p>Revisité</p>
+                        </li>
+                        <li class="item__validate">
+                            <i  id="check__point" class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                        </li>
+                        <li class="price">18€</li>
+                    </ul>
+                    <ul class="items 2">
+                        <li class="item__text">
+                            <h3>Macaron au chocolat d'exception</h3>
+                            <p>Et glace à la vanille de Madagascar</p>
+                        </li>
+                        <li class="item__validate">
+                            <i  id="check__point" class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                        </li>
+                        <li class="price">22€</li>
+                    </ul>
+                    <ul class="items 3">
+                        <li class="item__text">
+                            <h3>Mousse au chocolat</h3>
+                            <p>Au piment d'Espelette et à la truffe noire</p>
+                        </li>
+                        <li class="item__validate">
+                            <i  id="check__point" class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                        </li>
+                        <li class="price">23€</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="button__order">
+                <button onclick="window.location.href='#restaurants'" type="button" class="btn">
+                    commander
+                </button>
+            </div>
+        </section>
+    </div>
+    </main>
+    <footer>
+        <section>
+            <h3>ohmyfood</h3>
+            <ul class="ul__footer">
+                <li>
+                    <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+                    <p>Proposer un restaurant</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-handshake fa-rotate-by" style="--fa-rotate-angle: 150deg"
+                        aria-hidden="true"></i>
+                    <p>Devenir partenaire</p>
+                </li>
+                <li>Mentions légales</li>
+                <li><a href="mailto:lelaurain.luca@gmail.com">Contact</a></li>
             </ul>
         </section>
-    </main>
+    </footer>
 </body>
 
 </html>
