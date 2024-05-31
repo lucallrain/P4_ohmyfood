@@ -154,7 +154,7 @@ header #back__arrow {
   font-size: 1.5rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   header {
     height: 96px;
   }
@@ -499,7 +499,7 @@ main .menu .button__order button {
   width: 60%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   main .position {
     border: none;
     box-shadow: none;
@@ -512,7 +512,7 @@ main .menu .button__order button {
     font-size: 2.7rem;
   }
   main .Fonctionnement .fonction__container {
-    width: 80%;
+    width: 100%;
   }
   main .Fonctionnement .fonction__container .ul__fonction {
     display: flex;
@@ -539,6 +539,14 @@ main .menu .button__order button {
   }
   main .Restaurants .restaurants__container i {
     margin-left: 150px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1270px) {
+  main .Fonctionnement .fonction__container .ul__fonction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 footer {
@@ -584,7 +592,7 @@ footer section ul i {
   height: 16px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   footer {
     height: 114px;
   }

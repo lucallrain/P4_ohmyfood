@@ -1,7 +1,6 @@
 footer {
     color: white;
     width: 100%;
-
     padding: 22px;
     display: flex;
     background-color: #353535;
@@ -41,8 +40,6 @@ footer {
                 }
             }
 
-
-
             i {
                 width: 16px;
                 height: 16px;
@@ -52,12 +49,11 @@ footer {
     }
 }
 
-@media screen and (min-width : 768px) {
+@media screen and (min-width : 1024px) {
     footer {
         height: 114px;
 
         section {
-            
             display: flex;
             flex-direction: row-reverse;
             align-items: flex-end;
@@ -76,14 +72,8 @@ footer {
                 align-items: flex-end;
                 gap: 30px;
                 
-
-
                 li {
-                    align-items: flex-end;
-                    
-                    
-                    
-                      
+                    align-items: flex-end; 
                 }
             }
         }

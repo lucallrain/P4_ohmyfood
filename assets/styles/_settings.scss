@@ -8,15 +8,12 @@ $color3: #99E2D0;
   box-sizing: border-box;
   font-family: "Roboto", "Shrikhand", sans-serif;
   list-style: none;
-  
 }
-
 body {
   max-width: 1440px;
   margin: 0px;
   padding: 0px;
 }
-
 button.btn {
   padding: 15px 30px;
   font-weight: 400;
@@ -28,32 +25,21 @@ button.btn {
   border-radius: 50px;
   cursor: pointer;
   transition: 250ms;
-
-
-
   &:hover {
     background: linear-gradient(360deg, $color1 0%, $color2 100%);
     box-shadow: rgba(0, 0, 0, 0.450) 5px 5px 25px 5px;
     transition: 250ms;
-
-
-
-
   }
 }
-
 h2 {
-  
   font-size: 1.8rem;
 }
-
 h1{
   font-family: "shrikhand", sans-serif;
   padding: 20px;
   font-weight: 500;
   font-size: 1.8rem;
   }
-
   .loading{
     background-color: white;
     animation: forwards 3s ;
@@ -69,9 +55,6 @@ h1{
     flex-direction: column-reverse;
     opacity: 0;
     }
-
-  
-
   .loader {
     transform: rotateZ(45deg);
     perspective: 1000px;
@@ -98,7 +81,7 @@ h1{
       transform: rotateY(70deg);
       animation-delay: .4s;
     }
-
+    
   @keyframes rotate {
     0% {
       transform: translate(-50%, -50%) rotateZ(0deg);
