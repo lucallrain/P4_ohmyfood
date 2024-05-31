@@ -6,6 +6,12 @@
   list-style: none;
 }
 
+body {
+  max-width: 1440px;
+  margin: 0px;
+  padding: 0px;
+}
+
 button.btn {
   padding: 15px 30px;
   font-weight: 400;
@@ -346,15 +352,18 @@ main .restaurants__container .dish p {
   font-weight: 300;
 }
 main .background__img {
-  height: 200px;
+  position: absolute;
+  height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 300px;
   width: 100%;
+  background-image: url(/assets/img/lapalettedugout.jpg);
+  z-index: 1;
 }
 main .background__img img {
-  width: 100%;
+  width: 450px;
   min-height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -362,12 +371,12 @@ main .background__img img {
 }
 main .main__wrapper {
   width: 100%;
-  height: 1590px;
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
 }
 main .menu {
+  margin-top: 250px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -377,6 +386,7 @@ main .menu {
   border-radius: 25px 25px 0px 0px;
   background-color: #F6F6F6;
   gap: 30px;
+  z-index: 2;
 }
 main .menu .flex__container {
   width: 100%;
@@ -464,7 +474,6 @@ main .menu .items .item__validate {
   width: 60px;
   background-color: #99E2D0;
   height: 100%;
-  position: absolute;
   right: -60px;
   display: flex;
   justify-content: center;
