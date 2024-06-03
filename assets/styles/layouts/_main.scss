@@ -327,6 +327,7 @@ main {
                 transform-origin: right;
                 transition: transform 0.5s ease;
                 i {
+                    color: white;
                     width: 75px;
                     background-color: #99E2D0;
                     height: 100%;
@@ -442,6 +443,7 @@ main {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        
         }
     }
 

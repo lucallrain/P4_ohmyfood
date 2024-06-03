@@ -47,8 +47,10 @@ h4 {
 }
 
 .loading {
+  display: none;
   background-color: white;
-  animation: forwards 3s;
+  animation: forwards;
+  animation-duration: 5s;
   box-sizing: border-box;
   position: fixed;
   width: 100%;
@@ -57,7 +59,7 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
-  opacity: 0;
+  opacity: 100;
 }
 
 .loader {
@@ -67,6 +69,7 @@ h4 {
   width: 150px;
   height: 150px;
   color: #99e2d0;
+  animation-duration: 5s;
 }
 
 .loader:before,
@@ -498,6 +501,7 @@ main .menu .items .item__validate {
   transition: transform 0.5s ease;
 }
 main .menu .items .item__validate i {
+  color: white;
   width: 75px;
   background-color: #99E2D0;
   height: 100%;
