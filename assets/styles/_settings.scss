@@ -63,14 +63,14 @@ h4 {
 }
 
   .loader {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border: 5px dotted $color3;
     border-radius: 50%;
     display: inline-block;
     position: relative;
-    top: 40%;
-    left: 40%;
+    top: 25%;
+    left: 19%;
     box-sizing: border-box;
     animation: rotation 10s linear infinite;
     
@@ -81,8 +81,8 @@ h4 {
     font-size: 26px;
     color: $color2;
     position: absolute;
-    top: 54%;
-    left: 44%;
+    top: 37%;
+    left: 30%;
   }
 
   @keyframes rotation {
@@ -103,5 +103,31 @@ h4 {
       }
     }
  
+    @media screen and (min-width : 1024px) {
+
+      .loader {
+        width: 250px;
+        height: 250px;
+        border: 5px dotted $color3;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        top: 40%;
+        left: 40%;
+        box-sizing: border-box;
+        animation: rotation 10s linear infinite;
+        
+      }
+      .chargement {
+        font-family: "Shrikhand";
+        font-size: 26px;
+        color: $color2;
+        position: absolute;
+        top: 51%;
+        left: 43%;
+      }
+
+    }
+
 
 
