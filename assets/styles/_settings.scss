@@ -13,6 +13,10 @@ $color3: #99E2D0;
 body {
   margin: 0px;
   padding: 0px;
+  max-width: 1440px;
+}
+.main_wrapper{
+  max-width: 1440px;
 }
 
 button.btn {
@@ -70,7 +74,7 @@ h4 {
     display: inline-block;
     position: relative;
     top: 25%;
-    left: 19%;
+    left: 15%;
     box-sizing: border-box;
     animation: rotation 10s linear infinite;
     
@@ -82,7 +86,7 @@ h4 {
     color: $color2;
     position: absolute;
     top: 37%;
-    left: 30%;
+    left: 25%;
   }
 
   @keyframes rotation {

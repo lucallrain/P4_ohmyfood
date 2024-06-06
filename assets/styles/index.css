@@ -10,6 +10,11 @@
 body {
   margin: 0px;
   padding: 0px;
+  max-width: 1440px;
+}
+
+.main_wrapper {
+  max-width: 1440px;
 }
 
 button.btn {
@@ -65,7 +70,7 @@ h4 {
   display: inline-block;
   position: relative;
   top: 25%;
-  left: 19%;
+  left: 15%;
   box-sizing: border-box;
   animation: rotation 10s linear infinite;
 }
@@ -76,7 +81,7 @@ h4 {
   color: #FF79DA;
   position: absolute;
   top: 37%;
-  left: 30%;
+  left: 25%;
 }
 
 @keyframes rotation {
@@ -356,6 +361,7 @@ main .background__img1 {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 300px;
+  max-width: 1440px;
   width: 100%;
   background-image: url(/assets/img/lapalettedugout.jpg);
   z-index: 1;
@@ -375,6 +381,7 @@ main .background__img2 {
   background-repeat: no-repeat;
   background-position: center;
   max-height: 300px;
+  max-width: 1440px;
   background-image: url(/assets/img/lanoteenchantee.jpg);
   z-index: 1;
 }
@@ -395,6 +402,7 @@ main .background__img4 {
   background-repeat: no-repeat;
   background-position: center;
   max-height: 300px;
+  max-width: 1440px;
   background-image: url(/assets/img/ledelicedessens.jpg);
   z-index: 1;
 }
@@ -415,6 +423,7 @@ main .background__img3 {
   background-repeat: no-repeat;
   background-position: center;
   max-height: 300px;
+  max-width: 1440px;
   background-image: url(/assets/img/alafrançaise.jpg);
   z-index: 1;
 }
