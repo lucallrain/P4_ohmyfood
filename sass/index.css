@@ -64,7 +64,7 @@ h4 {
   border-radius: 50%;
   display: inline-block;
   position: relative;
-  top: 25%;
+  top: 50%;
   left: 15%;
   box-sizing: border-box;
   animation: rotation 10s linear infinite;
@@ -74,9 +74,9 @@ h4 {
   font-family: "Shrikhand";
   font-size: 26px;
   color: #FF79DA;
-  position: absolute;
-  top: 37%;
-  left: 25%;
+  position: relative;
+  top: 34%;
+  left: 34%;
 }
 
 @keyframes rotation {
@@ -102,17 +102,13 @@ h4 {
     display: inline-block;
     position: relative;
     top: 40%;
-    left: 40%;
+    left: 45%;
     box-sizing: border-box;
     animation: rotation 10s linear infinite;
   }
   .chargement {
-    font-family: "Shrikhand";
-    font-size: 26px;
-    color: #FF79DA;
-    position: absolute;
-    top: 51%;
-    left: 42%;
+    top: 28%;
+    left: 32%;
   }
 }
 header {
@@ -206,9 +202,9 @@ main .explorer__Container p {
   font-size: 1.2rem;
 }
 main .Fonctionnement {
+  width: 100%;
   padding: 50px 20px 50px 20px;
   display: flex;
-  max-width: 1440px;
 }
 main .fonction__container {
   display: flex;
@@ -218,6 +214,7 @@ main .fonction__container {
   text-align: center;
   gap: 30px;
   padding: 0px 10px 0px 10px;
+  max-width: 1440px;
 }
 main .ul__fonction {
   display: flex;
@@ -266,6 +263,7 @@ main .Restaurants {
   background-color: #f6f6f6;
   padding: 50px 20px 70px 20px;
   display: flex;
+  width: 100%;
 }
 main .restaurants__container {
   display: flex;
@@ -273,6 +271,7 @@ main .restaurants__container {
   align-items: flex-start;
   text-align: center;
   gap: 30px;
+  max-width: 1440px;
 }
 main .restaurants__container .card__container {
   display: flex;
@@ -358,9 +357,8 @@ main .background__img1 {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 300px;
-  max-width: 1440px;
   width: 100%;
-  background-image: url(../img/lapalettedugout.jpg);
+  background-image: url(../../assets/img/lapalettedugout.jpg);
   z-index: 1;
 }
 main .background__img1 img {
@@ -378,8 +376,7 @@ main .background__img2 {
   background-repeat: no-repeat;
   background-position: center;
   max-height: 300px;
-  max-width: 1440px;
-  background-image: url(../img/lanoteenchantee.jpg);
+  background-image: url(../../assets/img/lanoteenchantee.jpg);
   z-index: 1;
 }
 main .background__img2 img {
@@ -399,8 +396,7 @@ main .background__img4 {
   background-repeat: no-repeat;
   background-position: center;
   max-height: 300px;
-  max-width: 1440px;
-  background-image: url(../img/ledelicedessens.jpg);
+  background-image: url(../../assets/img/ledelicedessens.jpg);
   z-index: 1;
 }
 main .background__img4 img {
@@ -420,8 +416,7 @@ main .background__img3 {
   background-repeat: no-repeat;
   background-position: center;
   max-height: 300px;
-  max-width: 1440px;
-  background-image: url(../img/alafrançaise.jpg);
+  background-image: url(../../assets/img/alafrançaise.jpg);
   z-index: 1;
 }
 main .background__img3 img {
@@ -436,6 +431,7 @@ main .background__img3 img {
 main .main__wrapper {
   width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   background-color: white;
 }
@@ -603,32 +599,34 @@ main .menu .button__order button {
   main .explorer__Container h2 {
     font-size: 2.7rem;
   }
-  main .Fonctionnement {
-    padding: 50px 20px 50px 225px;
+  main .Fonctionnement .fonction__container {
+    display: flex;
+    justify-content: center;
   }
   main .Fonctionnement .fonction__container .ul__fonction {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
   main .Fonctionnement .fonction__container .ul__fonction .li__fonction {
-    max-width: 335px;
+    max-width: 350px;
     max-height: 72px;
   }
   main .Restaurants {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
   }
   main .Restaurants .restaurants__container {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 30px;
-    padding: 0px 0px 0px 270px;
   }
   main .Restaurants .restaurants__container .card__container {
+    max-width: 1080px;
     flex-direction: row;
     align-items: center;
     text-align: center;
@@ -649,22 +647,25 @@ main .menu .button__order button {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1055px;
-    margin-left: 200px;
-    margin-top: 270px;
+    width: 80%;
   }
   main .menu .flex__container {
-    padding-left: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
   main .menu .item__container {
-    justify-content: center;
     align-items: flex-start;
+    gap: 10px;
+    width: 50%;
+  }
+  main .menu h2 {
+    justify-content: flex-start;
   }
   main .menu .items {
     max-width: 634px;
-  }
-  main .button__order {
-    padding-left: 100px;
   }
   main .button__order .btn {
     max-width: 186px;

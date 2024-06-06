@@ -61,19 +61,18 @@ h4 {
     border-radius: 50%;
     display: inline-block;
     position: relative;
-    top: 25%;
+    top: 50%;
     left: 15%;
     box-sizing: border-box;
     animation: rotation 10s linear infinite;
   }
-
   .chargement {
     font-family: "Shrikhand";
-    font-size: 26px;
-    color: $color2;
-    position: absolute;
-    top: 37%;
-    left: 25%;
+        font-size: 26px;
+        color: $color2;
+        position: relative;
+        top: 34%;
+        left: 34%;
   }
   @keyframes rotation {
     0% {
@@ -100,18 +99,15 @@ h4 {
         display: inline-block;
         position: relative;
         top: 40%;
-        left: 40%;
+        left: 45%;
         box-sizing: border-box;
         animation: rotation 10s linear infinite;
       }
-      .chargement {
-        font-family: "Shrikhand";
-        font-size: 26px;
-        color: $color2;
-        position: absolute;
-        top: 51%;
-        left: 42%;
+      .chargement{
+        top:28%;
+        left: 32%;
       }
+      
     }
 
 
