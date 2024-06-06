@@ -167,7 +167,6 @@ main {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  max-width: 1440px;
 }
 main section {
   display: flex;
@@ -625,7 +624,6 @@ main .menu .button__order button {
   main .Restaurants .restaurants__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 30px;
     padding: 0px 0px 0px 170px;
   }

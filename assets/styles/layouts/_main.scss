@@ -4,7 +4,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    max-width: 1440px;
+   
     section {
         display: flex;
         flex-direction: column;
@@ -465,7 +465,7 @@ main {
             .restaurants__container {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                
                 gap: 30px;
                 padding: 0px 0px 0px 170px;
                 .card__container {
