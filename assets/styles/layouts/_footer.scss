@@ -4,7 +4,6 @@ footer {
     padding: 22px;
     display: flex;
     background-color: #353535;
-    max-width: 1440px;
     section {
         width: 100%;
         display: flex;
@@ -51,6 +50,7 @@ footer {
             align-items: flex-end;
             gap: 75px;
             padding: 10px;
+            max-width: 1440px;
             h3 {
                 width: 120px;
             }

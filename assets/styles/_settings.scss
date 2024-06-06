@@ -12,11 +12,8 @@ $color3: #99E2D0;
 body {
   margin: 0px;
   padding: 0px;
-  max-width: 1440px;
 }
-.main_wrapper{
-  max-width: 1440px;
-}
+
 button.btn {
   padding: 15px 30px;
   font-weight: 400;
@@ -55,7 +52,7 @@ h4 {
   top: 0;
   z-index: 10;
   animation: hideLoader 3500ms 1 forwards;
-  animation-delay: 1500ms;
+  animation-delay: 500ms;
 }
   .loader {
     width: 250px;
