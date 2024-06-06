@@ -5,14 +5,12 @@ main {
     justify-content: space-between;
     width: 100%;
     max-width: 1440px;
-
     section {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
-
     .position {
         width: 100%;
         height: 50px;
@@ -26,14 +24,12 @@ main {
         box-shadow: -1px 1px 9px 0px rgba(0, 0, 0, 0.5);
         gap: 20px;
         margin-bottom: 3px;
-
         p {
             font-size: 1.3rem;
             font-weight: 500;
             text-align: center;
         }
     }
-
     .explorer__Container {
         background-color: #f6f6f6;
         display: flex;
@@ -44,19 +40,15 @@ main {
         gap: 30px;
         text-align: center;
         padding: 40px 10px 50px 10px;
-
         p {
             font-weight: 300;
             font-size: 1.2rem;
         }
-
     }
-
     .Fonctionnement {
         padding: 50px 20px 50px 20px;
         display: flex;
     }
-
     .fonction__container {
         display: flex;
         flex-direction: column;
@@ -66,14 +58,12 @@ main {
         gap: 30px;
         padding: 0px 10px 0px 10px;
     }
-
     .ul__fonction {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 30px;
-
         .li__fonction {
             background: #F6F6F6;
             width: 335px;
@@ -86,22 +76,18 @@ main {
             border-radius: 25px;
             box-shadow: 0 0 10px 1px rgb(0 0 0 / 20%);
             gap: 20px;
-
             #number {
                 color: #9356dc
             }
-
             i {
                 color: gray;
                 width: 16px;
                 height: 18px;
             }
         }
-
         p {
             font-weight: 500;
         }
-
         span {
             align-items: center;
             color: white;
@@ -115,26 +101,22 @@ main {
             font-size: 14px;
         }
     }
-
     .Restaurants {
         background-color: #f6f6f6;
         padding: 50px 20px 70px 20px;
         display: flex;
     }
-
     .restaurants__container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         text-align: center;
         gap: 30px;
-
         .card__container {
             display: flex;
             flex-direction: column;
             gap: 50px;
         }
-
         .dish {
             color: black;
             min-width: 330px;
@@ -147,7 +129,6 @@ main {
             box-shadow: 0 0 10px 1px rgb(0 0 0 / 20%);
             overflow: hidden;
             cursor: pointer;
-
             span {
                 color: #269e80;
                 font-weight: 700;
@@ -177,45 +158,38 @@ main {
                 -webkit-text-fill-color: transparent;
                 -webkit-text-stroke-width: 0px;
                 transition: 250ms;
-
                 &:hover {
                     opacity: 100%;
                     transition: 250ms;
                 }
             }
-
             i.fa-regular {
                 font-size: 22px;
                 position: absolute;
                 transform: translate(275px, 200px);
                 opacity: 100%;
-
                 &:hover {
                     opacity: 0%;
                 }
             }
-
             img {
                 width: 100%;
                 height: 170px;
                 border-radius: 15px 15px 0px 0px;
                 object-fit: cover;
             }
-
             h3 {
                 display: flex;
                 width: 100%;
                 font-size: 18px;
                 padding-left: 10px;
             }
-
             p {
                 padding-left: 10px;
                 font-weight: 300;
             }
         }
     }
-
     .background__img1 {
         position: absolute;
         height: 300px;
@@ -227,7 +201,6 @@ main {
         width: 100%;
         background-image: url(/assets/img/lapalettedugout.jpg);
         z-index: 1;
-
         img {
             width: 450px;
             min-height: 300px;
@@ -236,7 +209,6 @@ main {
             background-position: center;
         }
     }
-
     .background__img2 {
         position: absolute;
         width: 100%;
@@ -297,15 +269,12 @@ main {
             object-fit: cover;
         }
     }
-    
-
     .main__wrapper {
         width: 100%;
         display: flex;
         flex-direction: column;
         background-color: white;
     }
-
     .menu {
         margin-top: 250px;
         width: 100%;
@@ -318,29 +287,24 @@ main {
         background-color: #F6F6F6;
         gap: 30px;
         z-index: 2;
-
         #title__container {
             padding: 20px;
             display: flex;
             align-items: center;
-
             div {
                 position: relative;
                 top: 50%;
                 left: 10%;
             }
         }
-
         .flex__container {
             width: 100%;
             gap: 30px;
             padding: 10px;
         }
-
         h1 {
             font-size: 1.6rem;
         }
-
         #heart__position2 {
             font-size: 22px;
             position: absolute;
@@ -354,35 +318,29 @@ main {
             -webkit-text-stroke-width: 0px;
             transform: translateY(-50%);
             transition: 250ms;
-
             &:hover {
                 opacity: 100%;
                 transition: 250ms;
             }
         }
-
         #heart__position1 {
             font-size: 22px;
             position: absolute;
             opacity: 100%;
             transform: translateY(-50%);
-
             &:hover {
                 opacity: 0%;
             }
         }
-
         .item__container {
             width: 100%;
             display: flex;
             flex-direction: column;
-
             h2 {
                 font-size: 1.2rem;
                 font-weight: 300;
                 color: #737373;
                 margin-bottom: 10px;
-
                 &::after {
                     content: "";
                     width: 40px;
@@ -393,7 +351,6 @@ main {
                 }
             }
         }
-
         .items {
             width: 100%;
             background-color: white;
@@ -406,14 +363,12 @@ main {
             overflow: hidden;
             margin-bottom: 20px;
             cursor: pointer;
-
             .item__text {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
                 padding: 10px;
                 overflow: hidden;
-
                 p {
                     text-overflow: ellipsis;
                     overflow: hidden;
@@ -421,21 +376,18 @@ main {
                     font-size: 0.9rem;
                     font-weight: 400;
                 }
-
                 h3 {
                     text-overflow: ellipsis;
                     overflow: hidden;
                     white-space: nowrap;
                 }
             }
-
             .item__validate {
                 display: flex;
                 justify-content: flex-end;
                 transform: translateX(75px);
                 transform-origin: right;
                 transition: transform 0.5s ease;
-
                 i {
                     color: white;
                     width: 75px;
@@ -447,7 +399,6 @@ main {
                     align-items: center;
                     overflow: hidden;
                 }
-
                 .price {
                     margin-top: 45px;
                     font-size: 14px;
@@ -457,32 +408,27 @@ main {
                     align-items: flex-end;
                 }
             }
-
             .items1 {
                 animation: items-display 1.5s forwards linear;
             }
         }
-
         .items:hover {
             .item__validate {
                 transform: translateX(0px);
             }
         }
-
         .button__order {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 50px;
-
             button {
                 width: 186px;
             }
         }
     }
 }
-
 
 @media screen and (min-width : 1024px) {
     main {
@@ -491,15 +437,12 @@ main {
             box-shadow: none;
             margin: auto;
         }
-
         .explorer__Container {
             h2 {
                 font-size: 2.7rem;
             }
-
             padding: 40px 10px 30px 10px;
         }
-
         .Fonctionnement {
             .fonction__container {
                 .ul__fonction {
@@ -507,7 +450,6 @@ main {
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-
                     .li__fonction {
                         max-width: 335px;
                         max-height: 72px;
@@ -515,20 +457,17 @@ main {
                 }
             }
         }
-
         .Restaurants {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-
             .restaurants__container {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 gap: 30px;
                 padding: 0px 0px 0px 170px;
-
                 .card__container {
                     flex-direction: row;
                     align-items: center;
@@ -536,22 +475,18 @@ main {
                     flex-wrap: wrap;
                     gap: 75px;
                 }
-
                 .dish {
                     width: 500px;
                     height: 260px;
-
                     span {
                         left: 380px;
                     }
                 }
-
                 i {
                     margin-left: 150px;
                 }
             }
         }
-
         .menu {
             display: flex;
             justify-content: center;
@@ -559,33 +494,27 @@ main {
             max-width: 1055px;
             margin-left: 200px;
             margin-top: 270px;
-
             .flex__container {
                 padding-left: 250px;
             }
-
             .item__container {
                 justify-content: center;
                 align-items: flex-start;
 
             }
-
             .items {
                 max-width: 634px;
             }
-
         }
 
         .button__order {
             padding-left: 100px;
-
             .btn {
                 max-width: 186px;
             }
         }
     }
 }
-
 @media (min-width:1024px) and (max-width:1270px) {
     main {
         .Fonctionnement .fonction__container .ul__fonction {
@@ -594,13 +523,11 @@ main {
             justify-content: center;
             align-items: center;
         }
-
         .Restaurants .restaurants__container .card__container {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
         }
 
     }
