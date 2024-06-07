@@ -358,7 +358,7 @@ main .background__img1 {
   background-position: center;
   min-height: 300px;
   width: 100%;
-  background-image: url(./assets/img/lapalettedugout.jpg);
+  background-image: url(../assets/img/lapalettedugout.jpg);
   z-index: 1;
 }
 main .background__img1 img {
@@ -376,7 +376,7 @@ main .background__img2 {
   background-repeat: no-repeat;
   background-position: center;
   max-height: 300px;
-  background-image: url(./assets/img/lanoteenchantee.jpg);
+  background-image: url(../assets/img/lanoteenchantee.jpg);
   z-index: 1;
 }
 main .background__img2 img {
@@ -396,7 +396,7 @@ main .background__img4 {
   background-repeat: no-repeat;
   background-position: center;
   max-height: 300px;
-  background-image: url(./assets/img/ledelicedessens.jpg);
+  background-image: url(../assets/img/ledelicedessens.jpg);
   z-index: 1;
 }
 main .background__img4 img {
@@ -416,7 +416,7 @@ main .background__img3 {
   background-repeat: no-repeat;
   background-position: center;
   max-height: 300px;
-  background-image: url(./assets/img/alafrançaise.jpg);
+  background-image: url(../assets/img/alafrançaise.jpg);
   z-index: 1;
 }
 main .background__img3 img {
