@@ -33,6 +33,7 @@ button.btn {
 }
 h2 {
   font-size: 1.8rem;
+  width: 100%;
 }
 h1 {
   font-family: "Roboto", sans-serif;
@@ -70,9 +71,9 @@ h4 {
     font-family: "Shrikhand";
         font-size: 26px;
         color: $color2;
-        position: relative;
-        top: 34%;
-        left: 34%;
+        position: absolute;
+        top:38%;
+        left:25%;
   }
   @keyframes rotation {
     0% {
@@ -103,11 +104,6 @@ h4 {
         box-sizing: border-box;
         animation: rotation 10s linear infinite;
       }
-      .chargement{
-        top:28%;
-        left: 32%;
-      }
-      
     }
 
 
