@@ -511,9 +511,8 @@ main {
         }
 
         .Fonctionnement {
-            padding: 50px 180px 50px 180px;
+            padding: 50px 175px 50px 175px;
             .fonction__container {
-                
                 display: flex;
                 justify-content: flex-start;
                 align-items: flex-start;
@@ -538,19 +537,18 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 50px 100px 50px 180px;
-
+            padding: 50px 170px 50px 170px;
             .restaurants__container {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 30px;
                 .card__container {
                     flex-direction: row;
+                    justify-content: space-between;
                     align-items: center;
                     text-align: center;
                     flex-wrap: wrap;
-                    gap: 90px;
+                    
                 }
 
                 .dish {
