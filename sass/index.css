@@ -611,14 +611,13 @@ main .menu .button__order button {
     align-items: center;
   }
   main .Fonctionnement .fonction__container .ul__fonction .li__fonction {
-    max-width: 350px;
     max-height: 72px;
   }
   main .Restaurants {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 170px 50px 170px;
+    padding: 50px 170px 50px 177px;
   }
   main .Restaurants .restaurants__container {
     display: flex;
