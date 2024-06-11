@@ -511,7 +511,7 @@ main {
         }
 
         .Fonctionnement {
-            padding: 50px 175px 50px 175px;
+            padding: 50px 150px 50px 125px;
             .fonction__container {
                 display: flex;
                 justify-content: flex-start;
@@ -525,47 +525,14 @@ main {
                     
 
                     .li__fonction {
-                        
                         max-height: 72px;
-                        
                     }
                 }
             }
         }
-
-        .Restaurants {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 50px 170px 50px 177px;
-            .restaurants__container {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                .card__container {
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    text-align: center;
-                    flex-wrap: wrap;
-                    
-                }
-
-                .dish {
-                    width: 500px;
-                    height: 260px;
-
-                    span {
-                        left: 380px;
-                    }
-                }
-
-                i {
-                    margin-left: 150px;
-                }
-            }
+        .Restaurants{
+            padding: 50px 150px 50px 125px;
         }
-
         .menu {
             display: flex;
             justify-content: center;
@@ -602,6 +569,39 @@ main {
         }
     }
 }
+@media screen and (min-width : 1340px)  {
+.Restaurants {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 170px 50px 125px;
+    .restaurants__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .card__container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            flex-wrap: wrap;
+            
+        }
 
+        .dish {
+            width: 500px;
+            height: 260px;
+
+            span {
+                left: 380px;
+            }
+        }
+
+        i {
+            margin-left: 150px;
+        }
+    }
+}
+}
 
 
