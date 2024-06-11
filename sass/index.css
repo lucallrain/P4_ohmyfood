@@ -54,8 +54,7 @@ h4 {
   height: 100vh;
   top: 0;
   z-index: 10;
-  animation: hideLoader 3500ms 1 forwards;
-  animation-delay: 500ms;
+  animation: hideLoader 2500ms 1 forwards;
 }
 
 .loader {
