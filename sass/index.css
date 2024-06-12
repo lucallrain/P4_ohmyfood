@@ -266,7 +266,6 @@ main .restaurants__container .card__container {
 }
 main .restaurants__container .dish {
   color: black;
-  min-width: 240px;
   height: 240px;
   position: relative;
   display: flex;
