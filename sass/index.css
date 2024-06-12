@@ -70,6 +70,7 @@ h4 {
   transform: translate(-50%, -50%);
   box-sizing: border-box;
   animation: rotation 10s linear infinite;
+  -moz-animation: rotation 10s linear infinite;
 }
 
 .chargement {
@@ -92,6 +93,8 @@ h4 {
 }
 @keyframes hideLoader {
   100% {
+    -moz-opacity: 0;
+    -moz-display: none;
     opacity: 0;
     display: none;
   }
