@@ -266,6 +266,26 @@ main .restaurants__container .card__container {
   flex-direction: column;
   gap: 50px;
 }
+main .restaurants__container .footer__card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+main .restaurants__container .footer__card .text__card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+main .restaurants__container .footer__card .heart__card {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+main .restaurants__container .footer__card .heart__card i {
+  position: absolute;
+  transform: translateY(50%);
+}
 main .restaurants__container .dish {
   color: black;
   height: 240px;
@@ -296,7 +316,6 @@ main .restaurants__container .dish span {
 }
 main .restaurants__container .dish i.fa-solid {
   font-size: 22px;
-  position: absolute;
   opacity: 0%;
   background: hsl(267, 66%, 60%);
   background: linear-gradient(250deg, hsl(267, 66%, 60%) 0%, hsl(317, 100%, 74%) 100%);
@@ -306,8 +325,6 @@ main .restaurants__container .dish i.fa-solid {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 0px;
   transition: 250ms;
-  right: 20px;
-  bottom: 20px;
 }
 main .restaurants__container .dish i.fa-solid:hover {
   opacity: 100%;
@@ -315,9 +332,6 @@ main .restaurants__container .dish i.fa-solid:hover {
 }
 main .restaurants__container .dish i.fa-regular {
   font-size: 22px;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
   opacity: 100%;
 }
 main .restaurants__container .dish i.fa-regular:hover {
@@ -335,6 +349,7 @@ main .restaurants__container .dish h3 {
   width: 100%;
   font-size: 18px;
   padding-left: 10px;
+  margin-top: 10px;
 }
 main .restaurants__container .dish p {
   padding-left: 10px;
@@ -457,8 +472,8 @@ main .menu h1 {
   font-size: 1.6rem;
 }
 main .menu #heart__position2 {
-  font-size: 22px;
   position: absolute;
+  font-size: 22px;
   opacity: 0%;
   background: hsl(267, 66%, 60%);
   background: linear-gradient(250deg, hsl(267, 66%, 60%) 0%, hsl(317, 100%, 74%) 100%);
@@ -475,8 +490,8 @@ main .menu #heart__position2:hover {
   transition: 250ms;
 }
 main .menu #heart__position1 {
-  font-size: 22px;
   position: absolute;
+  font-size: 22px;
   opacity: 100%;
   transform: translateY(-50%);
 }
@@ -654,18 +669,14 @@ main .menu .button__order button {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
     flex-wrap: wrap;
   }
   .Restaurants .restaurants__container .dish {
-    width: 500px;
+    width: calc(50% - 80px);
     height: 260px;
   }
   .Restaurants .restaurants__container .dish span {
     left: 380px;
-  }
-  .Restaurants .restaurants__container i {
-    margin-left: 150px;
   }
 }
 footer {

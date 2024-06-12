@@ -145,6 +145,26 @@ main {
             flex-direction: column;
             gap: 50px;
         }
+        .footer__card{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            .text__card{
+                display: flex;
+                flex-direction: column;
+                gap:5px;
+            }
+            .heart__card{
+                position: relative;
+                width: 40px;
+                height: 40px;
+                i{
+                    position: absolute;
+                    transform: translateY(50%);
+                }
+            }
+        }
 
         .dish {
             color: black;
@@ -177,7 +197,6 @@ main {
 
             i.fa-solid {
                 font-size: 22px;
-                position: absolute;
                 opacity: 0%;
                 background: hsla(267, 66%, 60%, 1);
                 background: linear-gradient(250deg, hsla(267, 66%, 60%, 1) 0%, hsla(317, 100%, 74%, 1) 100%);
@@ -187,8 +206,7 @@ main {
                 -webkit-text-fill-color: transparent;
                 -webkit-text-stroke-width: 0px;
                 transition: 250ms;
-                right: 20px;
-                bottom: 20px;
+                
 
                 &:hover {
                     opacity: 100%;
@@ -198,9 +216,6 @@ main {
 
             i.fa-regular {
                 font-size: 22px;
-                position: absolute;
-                right: 20px;
-                bottom: 20px;
                 opacity: 100%;
 
                 &:hover {
@@ -220,6 +235,7 @@ main {
                 width: 100%;
                 font-size: 18px;
                 padding-left: 10px;
+                margin-top: 10px;
             }
 
             p {
@@ -356,9 +372,11 @@ main {
             font-size: 1.6rem;
         }
 
+        
+
         #heart__position2 {
-            font-size: 22px;
             position: absolute;
+            font-size: 22px;
             opacity: 0%;
             background: hsla(267, 66%, 60%, 1);
             background: linear-gradient(250deg, hsla(267, 66%, 60%, 1) 0%, hsla(317, 100%, 74%, 1) 100%);
@@ -369,6 +387,7 @@ main {
             -webkit-text-stroke-width: 0px;
             transform: translateY(-50%);
             transition: 250ms;
+            
 
             &:hover {
                 opacity: 100%;
@@ -377,11 +396,10 @@ main {
         }
 
         #heart__position1 {
-            font-size: 22px;
             position: absolute;
+            font-size: 22px;
             opacity: 100%;
             transform: translateY(-50%);
-
             &:hover {
                 opacity: 0%;
             }
@@ -594,22 +612,16 @@ main {
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                text-align: center;
                 flex-wrap: wrap;
-
             }
 
             .dish {
-                width: 500px;
+                width: calc(50% - 80px);
                 height: 260px;
 
                 span {
                     left: 380px;
                 }
-            }
-
-            i {
-                margin-left: 150px;
             }
         }
     }
