@@ -59,6 +59,8 @@ h4 {
   top: 0;
   animation: hideLoader 2500ms 1 forwards;
   animation-delay: 3500ms;
+  -moz-animation-delay: 3500ms;
+  -moz-animation: hideLoader 2500ms 1 forwards;
 }
 
 .loader {
