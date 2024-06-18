@@ -635,6 +635,27 @@ main .menu .button__order button {
   }
   main .Restaurants {
     padding: 50px 120px 50px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .Restaurants .restaurants__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .Restaurants .restaurants__container .card__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  main .Restaurants .restaurants__container .dish {
+    width: calc(50% - 80px);
+    height: 260px;
+  }
+  main .Restaurants .restaurants__container .dish span {
+    left: 380px;
   }
   main .menu {
     display: flex;
@@ -662,32 +683,6 @@ main .menu .button__order button {
   }
   main .button__order .btn {
     max-width: 186px;
-  }
-}
-@media screen and (min-width: 1342px) {
-  .Restaurants {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 170px 50px 125px;
-  }
-  .Restaurants .restaurants__container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .Restaurants .restaurants__container .card__container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .Restaurants .restaurants__container .dish {
-    width: calc(50% - 80px);
-    height: 260px;
-  }
-  .Restaurants .restaurants__container .dish span {
-    left: 380px;
   }
 }
 footer {
