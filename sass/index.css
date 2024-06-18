@@ -48,13 +48,19 @@ h4 {
 }
 
 .loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   position: fixed;
   background-color: white;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
-  z-index: 10;
   animation: hideLoader 2500ms 1 forwards;
+  animation-delay: 3500ms;
+  -moz-animation-delay: 3000ms;
+  -moz-animation: hideLoader 2000ms 1 forwards;
 }
 
 .loader {
@@ -62,21 +68,20 @@ h4 {
   height: 250px;
   border: 5px dotted #99E2D0;
   border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  top: 50%;
-  left: 15%;
+  position: absolute;
+  transform: translate(-50%, -50%);
   box-sizing: border-box;
   animation: rotation 10s linear infinite;
 }
 
 .chargement {
   font-family: "Shrikhand";
-  font-size: 26px;
+  font-size: 20px;
   color: #FF79DA;
   position: absolute;
-  top: 38%;
-  left: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes rotation {
@@ -91,20 +96,6 @@ h4 {
   100% {
     opacity: 0;
     display: none;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .loader {
-    width: 250px;
-    height: 250px;
-    border: 5px dotted #99E2D0;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-    top: 40%;
-    left: 45%;
-    box-sizing: border-box;
-    animation: rotation 10s linear infinite;
   }
 }
 header {
@@ -239,6 +230,9 @@ main .ul__fonction .li__fonction i {
   width: 16px;
   height: 18px;
 }
+main .ul__fonction .li__fonction #store {
+  color: #9356DC;
+}
 main .ul__fonction p {
   font-weight: 500;
 }
@@ -272,9 +266,28 @@ main .restaurants__container .card__container {
   flex-direction: column;
   gap: 50px;
 }
+main .restaurants__container .footer__card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+main .restaurants__container .footer__card .text__card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+main .restaurants__container .footer__card .heart__card {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+main .restaurants__container .footer__card .heart__card i {
+  position: absolute;
+  transform: translateY(50%);
+}
 main .restaurants__container .dish {
   color: black;
-  min-width: 330px;
   height: 240px;
   position: relative;
   display: flex;
@@ -303,7 +316,6 @@ main .restaurants__container .dish span {
 }
 main .restaurants__container .dish i.fa-solid {
   font-size: 22px;
-  position: absolute;
   opacity: 0%;
   background: hsl(267, 66%, 60%);
   background: linear-gradient(250deg, hsl(267, 66%, 60%) 0%, hsl(317, 100%, 74%) 100%);
@@ -320,9 +332,6 @@ main .restaurants__container .dish i.fa-solid:hover {
 }
 main .restaurants__container .dish i.fa-regular {
   font-size: 22px;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
   opacity: 100%;
 }
 main .restaurants__container .dish i.fa-regular:hover {
@@ -340,6 +349,7 @@ main .restaurants__container .dish h3 {
   width: 100%;
   font-size: 18px;
   padding-left: 10px;
+  margin-top: 10px;
 }
 main .restaurants__container .dish p {
   padding-left: 10px;
@@ -462,8 +472,8 @@ main .menu h1 {
   font-size: 1.6rem;
 }
 main .menu #heart__position2 {
-  font-size: 22px;
   position: absolute;
+  font-size: 22px;
   opacity: 0%;
   background: hsl(267, 66%, 60%);
   background: linear-gradient(250deg, hsl(267, 66%, 60%) 0%, hsl(317, 100%, 74%) 100%);
@@ -480,8 +490,8 @@ main .menu #heart__position2:hover {
   transition: 250ms;
 }
 main .menu #heart__position1 {
-  font-size: 22px;
   position: absolute;
+  font-size: 22px;
   opacity: 100%;
   transform: translateY(-50%);
 }
@@ -589,13 +599,13 @@ main .menu .button__order button {
     margin: auto;
   }
   main .explorer__Container {
-    padding: 40px 10px 40px 10px;
+    padding: 40px 20px 40px 20px;
   }
   main .explorer__Container h2 {
     font-size: 2.7rem;
   }
   main .Fonctionnement {
-    padding: 50px 150px 50px 125px;
+    padding: 50px 150px 50px 150px;
   }
   main .Fonctionnement .fonction__container {
     display: flex;
@@ -606,14 +616,14 @@ main .menu .button__order button {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   main .Fonctionnement .fonction__container .ul__fonction .li__fonction {
     max-height: 72px;
   }
   main .Restaurants {
-    padding: 50px 150px 50px 125px;
+    padding: 50px 120px 50px 150px;
   }
   main .menu {
     display: flex;
@@ -643,7 +653,7 @@ main .menu .button__order button {
     max-width: 186px;
   }
 }
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 1342px) {
   .Restaurants {
     display: flex;
     align-items: center;
@@ -659,18 +669,14 @@ main .menu .button__order button {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
     flex-wrap: wrap;
   }
   .Restaurants .restaurants__container .dish {
-    width: 500px;
+    width: calc(50% - 80px);
     height: 260px;
   }
   .Restaurants .restaurants__container .dish span {
     left: 380px;
-  }
-  .Restaurants .restaurants__container i {
-    margin-left: 150px;
   }
 }
 footer {
