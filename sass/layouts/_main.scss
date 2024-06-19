@@ -33,11 +33,11 @@ main {
         }
     }
 
-    .Explorer {
+    .explorer {
         background-color: #f6f6f6;
     }
 
-    .explorer__Container {
+    .explorer__container {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -54,7 +54,7 @@ main {
         }
     }
 
-    .Fonctionnement {
+    .fonctionnement {
         width: 100%;
         padding: 50px 20px 50px 20px;
         display: flex;
@@ -125,7 +125,7 @@ main {
         }
     }
 
-    .Restaurants {
+    .restaurants {
         background-color: #f6f6f6;
         padding: 50px 20px 70px 20px;
         display: flex;
@@ -529,7 +529,7 @@ main {
             margin: auto;
         }
 
-        .explorer__Container {
+        .explorer__container {
             h2 {
                 font-size: 2.7rem;
             }
@@ -537,7 +537,7 @@ main {
             padding: 40px 20px 40px 20px;
         }
 
-        .Fonctionnement {
+        .fonctionnement {
             padding: 50px 150px 50px 150px;
 
             .fonction__container {
@@ -560,7 +560,7 @@ main {
             }
         }
 
-        .Restaurants {
+        .restaurants {
             padding: 50px 120px 50px 150px;
             display: flex;
             align-items: center;
@@ -581,10 +581,6 @@ main {
                 .dish {
                     width: calc(50% - 80px);
                     height: 260px;
-
-                    span {
-                        left: 380px;
-                    }
                 }
             }
         }
@@ -625,4 +621,3 @@ main {
         }
     }
 }
-

@@ -182,10 +182,10 @@ main .position p {
   font-weight: 500;
   text-align: center;
 }
-main .Explorer {
+main .explorer {
   background-color: #f6f6f6;
 }
-main .explorer__Container {
+main .explorer__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,11 +196,11 @@ main .explorer__Container {
   padding: 40px 10px 50px 10px;
   max-width: 1440px;
 }
-main .explorer__Container p {
+main .explorer__container p {
   font-weight: 300;
   font-size: 1.2rem;
 }
-main .Fonctionnement {
+main .fonctionnement {
   width: 100%;
   padding: 50px 20px 50px 20px;
   display: flex;
@@ -259,7 +259,7 @@ main .ul__fonction span {
   position: relative;
   left: -12px;
 }
-main .Restaurants {
+main .restaurants {
   background-color: #f6f6f6;
   padding: 50px 20px 70px 20px;
   display: flex;
@@ -610,53 +610,50 @@ main .menu .button__order button {
     box-shadow: none;
     margin: auto;
   }
-  main .explorer__Container {
+  main .explorer__container {
     padding: 40px 20px 40px 20px;
   }
-  main .explorer__Container h2 {
+  main .explorer__container h2 {
     font-size: 2.7rem;
   }
-  main .Fonctionnement {
+  main .fonctionnement {
     padding: 50px 150px 50px 150px;
   }
-  main .Fonctionnement .fonction__container {
+  main .fonctionnement .fonction__container {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  main .Fonctionnement .fonction__container .ul__fonction {
+  main .fonctionnement .fonction__container .ul__fonction {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
   }
-  main .Fonctionnement .fonction__container .ul__fonction .li__fonction {
+  main .fonctionnement .fonction__container .ul__fonction .li__fonction {
     max-height: 72px;
   }
-  main .Restaurants {
+  main .restaurants {
     padding: 50px 120px 50px 150px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  main .Restaurants .restaurants__container {
+  main .restaurants .restaurants__container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  main .Restaurants .restaurants__container .card__container {
+  main .restaurants .restaurants__container .card__container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
-  main .Restaurants .restaurants__container .dish {
+  main .restaurants .restaurants__container .dish {
     width: calc(50% - 80px);
     height: 260px;
-  }
-  main .Restaurants .restaurants__container .dish span {
-    left: 380px;
   }
   main .menu {
     display: flex;
